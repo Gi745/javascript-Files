@@ -1,0 +1,134 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	margin:0;
+	font-family:Arial,Helvetica, sans-serif;
+}
+
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+	float:left;
+	color:#f2f2f2;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size:25px;
+}
+.topnav a:hover {
+	background-color:#ddd;
+	color:black;
+}
+.topnav a.active{
+	background-color:#4CAF50;
+	color:white;
+}
+
+</style>
+
+<style>
+iframe.alaVersh{
+	display:none;
+	}
+iframe.como{
+	display:none;
+	}
+iframe.chingas{
+	display:none;
+	}
+iframe.tePasas{
+	display:none;
+	}	
+iframe.deWey{
+	display:none;
+	}
+
+</style>
+</head>
+
+<body>
+
+<h1 id ="header">ENDERS GAME</h1>
+
+<script>
+document.body.style.backgroundColor = "pink";
+document.getElementById("header").style.color = "white";
+
+
+
+
+
+</script>
+<div class ="topnav">
+<a href  ="#home">Questions</a>
+<a href="#mainPage">About</a>
+<a href="#Images"> Images</a>
+<a class="active"= href="#video"> Video</a>
+<a href ="#facts">Facts</a>
+</div>
+
+
+
+<script>
+document.body.style.backgroundColor=("blue");
+</script>
+
+<select id = "theSelection">
+<option value="enderFights">Ender's Fight Scene</option>
+<option value="over"> Team Training battle</option>
+<option value="games">Mind Games</option>
+<option value="buggers">Queen Hive</option>
+<option value="fight">Ender's solo fight</option>
+</select>
+
+</form>
+<iframe class ="alaVersh" id = "games" width="560" height="315" src="https://www.youtube.com/embed/oDRFKZVZwcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class ="como" id="A" width="560" height="315" src="https://www.youtube.com/embed/3E9TWmE3dfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "chingas" id="B" width="560" height="315" src="https://www.youtube.com/embed/XPcqVHZo22M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="tePasas"id="C" width="560" height="315" src="https://www.youtube.com/embed/79kT7fUtLD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="deWey"id="D" width="560" height="315" src="https://www.youtube.com/embed/6RVyL8lNtj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<form>
+<script>
+document.getElementById("theSelection").addEventListener("change", okay);
+function okay(){
+	document.getElementById("games").style.display='none';
+	document.getElementById("A").style.display='none';
+	document.getElementById("B").style.display='none';
+	document.getElementById("C").style.display='none';
+	document.getElementById("D").style.display='none';
+	var vid = document.getElementById("theSelection").value;
+if (vid === "enderFights" ){
+document.getElementById("D").style.display="block";
+}else if (vid ==="over"){
+document.getElementById("A").style.display="block";
+}else if (vid==="games"){
+document.getElementById("games").style.display="block";
+}else if (vid==="buggers"){
+document.getElementById("B").style.display="block";
+}else if(vid==="fight"){
+document.getElementById("C").style.display="block";
+}
+
+}
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

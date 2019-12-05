@@ -1,0 +1,170 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	margin:0;
+	font-family:Arial,Helvetica, sans-serif;
+}
+
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+	float:left;
+	color:#f2f2f2;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size:25px;
+}
+.topnav a:hover {
+	background-color:#ddd;
+	color:black;
+}
+.topnav a.active{
+	background-color:#4CAF50;
+	color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 id ="header">ENDERS GAME</h1>
+
+<script>
+document.body.style.backgroundColor = "pink";
+document.getElementById("header").style.color = "white";
+
+
+
+
+
+</script>
+<div class ="topnav">
+<a  href = "#home">Home</a>
+<a href="#mainPage">About</a>
+<a class ="active"= href="#Images"> Images</a>
+<a href="#video"> Video</a>
+<a href ="#facts">Facts</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+<html>
+<head>
+<style>
+img {
+float:left;
+}
+.clear{
+clear:both;
+}
+</style>
+</head>
+
+<body>
+<script>
+document.body.style.backgroundColor="purple";
+</script>
+
+<h1 id = "styleme">CLICK ON THE PICTURES FOR DESCRIPTION</h1>
+
+
+
+
+<div>
+<img  id = "ender" src ="https://i.ytimg.com/vi/-scnEeqb9tc/maxresdefault.jpg" height="180" width="180"><br>
+<span id = "myScript"></span>
+</div>
+<div  class ="clear">
+<br><img id = "petra" src="https://www.thewrap.com/wp-content/uploads/2013/10/Enders_Games-Still-5.jpg" height="180" width="180">
+<span id = "ohmy"></span>
+</div>
+<div  class ="clear">
+<br><img id = "bean" src="https://i.pinimg.com/originals/56/12/52/561252d7d4230d498fb0d5d372ef8f43.jpg" height="180" width="180">
+<span id = "kid"></span>
+</div>
+
+<div  class ="clear">
+<br><img id = "guns" src="https://i.pinimg.com/originals/e0/13/6b/e0136bcd53eacb1fda5acb44bcb739f1.jpg" height="180" width="180">
+<span id = "gun"></span>
+</div>
+
+<script>
+
+document.getElementById("styleme").style.color="yellow";
+
+document.getElementById("ender").addEventListener("click",script);
+
+function script(){
+document.getElementById("myScript").innerHTML="This is Ender. He is the main character of the movie and the one who defeated the Buggers.";
+document.getElementById("myScript").style.color="white";
+}
+document.getElementById("petra").addEventListener("click",petra);
+function petra(){
+document.getElementById("ohmy").innerHTML ="this is petra. she is in Enders team and is one of the members that helped him win the battle against the buggers.";
+document.getElementById("ohmy").style.color="white";
+}
+document.getElementById("bean").addEventListener("click",theone);
+
+function theone(){
+document.getElementById("kid").innerHTML ="This kid is adressed as bean since he is so small in height and is kind of weak. Bean is very smart and he is also one of Enders teamates that helped him win the battle.";
+document.getElementById("kid").style.color="white";
+}
+document.getElementById("guns").addEventListener("click",weapons);
+
+function weapons(){
+document.getElementById("gun").innerHTML ="this is the weapon that ender and his friends would use to train.There purpose is to kill the enemy.";
+document.getElementById("gun").style.color="white";
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
